@@ -1,5 +1,6 @@
 /*
 GoDocの練習のために書いております。
+長い文章を書くときは、doc.goに分離して書くことがおすすめです。
 ここはoverviewとして表示されます。
 
 How To Use
@@ -9,27 +10,32 @@ How To Use
 	fmt.Println(sample)
 上記のインデントが下がっている部分がコードブロックです。
 
-ヘッダーにするためには前後を空行にします
+Header
 
-しかし、文字の最後に"。"が付くとヘッダーにはなりません。
-前後を空行にしても意味がない時もあります。
+Headerにするには、前後に空白行を挟みます。
+また、Headerは日本語ではなく、英語でないとHeaderになりません。
+ここに関してはgodocのソースコードを読む必要がありそうです。
+Headerの後にHeaderを記述したい場合は、間に文章が必要です。
 
-段落下げについて
+About paragraph
 
-通常の文章について、任意の位置で段落を下げることはできません。
 コード上のコメントでは
 "この部分"は
-段落を下げていますがドキュメントには反映されていません
+段落を分けていますが、ドキュメントには反映されていません
 
-リンクの貼り方
+段落を分けるためには、空白行を残す必要性があります。なので、段落を分けたいときは、このように、
+空白行を残すようようにしましょう。
+
+How to Link
 
 このように、単にurlを記述すると遷移できる文字になります。
-http://localhost:6060/pkg/net
 
-参考文献
+ref: http://localhost:6060/pkg/net
 
-example: https://go.dev/blog/examples 。
-書き方: https://go.dev/blog/godoc
+Reference
 
+example: https://go.dev/blog/examples
+
+書き方: https://go.dev/blog/godoc∂
 */
 package play_godoc

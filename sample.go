@@ -55,3 +55,13 @@ func NewJapanes(age int, word string, gender Gender) *Japanese {
 		Sex:  gender,
 	}
 }
+
+// BUG(sample): this func has bug
+func Bug() {
+	fmt.Println("BUG")
+}
+
+// Deprecated: this func is deprecated
+func Deprecated() {
+	fmt.Println("Deprecated")
+}
